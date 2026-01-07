@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibes Luxury Shirts</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;600&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #121212;
+      color: #eee;
+    }
+
+    /* Header / Nav */
+    header {
+      background: #1a1a1a;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #f0e7db;
+      letter-spacing: 1px;
+    }
+
+    .nav-menu a {
+      margin: 0 12px;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-menu a:hover {
+      color: #cfa95f;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: #cfa95f;
+    }
+
+    /* Categories */
+    .category {
+      padding: 25px 15px;
+    }
+
+    .category h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      color: #f0e7db;
+    }
+
+    /* Collection Grid */
+    .collection-grid {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 10px;
+      scroll-behavior: smooth;
+    }
+
+    .collection-grid::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .collection-grid::-webkit-scrollbar-thumb {
+      background: #555;
+      border-radius: 4px;
+    }
+
+    .collection-item {
+      min-width: 200px;
+      background: #1a1a1a;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .collection-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255,255,255,0.2);
+    }
+
+    .collection-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .collection-item .desc {
+      padding: 12px;
+      font-size: 14px;
+      color: #ccc;
+      font-weight: 500;
+    }
+
+    /* Order Now button */
+    .order-btn {
+      margin-top: 8px;
+      padding: 8px 12px;
+      background: #cfa95f;
+      color: #1a1a1a;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .order-btn:hover {
+      background: #e1ba73;
+      transform: scale(1.05);
+    }
+
+    /* Order number below button */
+    .order-number {
+      margin-top: 5px;
+      font-size: 12px;
+      color: #cfa95f;
+      font-weight: 500;
+    }
+
+    /* Footer */
+    footer {
+      background: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #333;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .collection-item { min-width: 160px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with logo, nav, and contact -->
+  <header>
+    <div class="logo">Vibes Luxury</div>
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collections</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="contact">+234 812 414 4886</div>
+  </header>
+
+  <!-- Top Rated Shirts -->
+  <section class="category">
+    <h2>Top Rated</h2>
+    <div class="collection-grid">
+      <div class="collection-item">
+        <img src="assets/images/top1.jpg" alt="Black Round Neck Shirt">
+        <div class="desc">
+          Classic black round-neck shirt
+          <button class="order-btn">Order Now</button>
+          <div class="order-number">Call/WhatsApp: +234 812 414 4886</div>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="assets/images/top2.jpg" alt="White Round Neck Shirt">
+        <div class="desc">
+          Premium white cotton round-neck
+          <button class="order-btn">Order Now</button>
+          <div class="order-number">Call/WhatsApp: +234 812 414 4886</div>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="assets/images/top3.jpg" alt="Grey Round Neck Shirt">
+        <div class="desc">
+          Limited edition grey designer round-neck
+          <button class="order-btn">Order Now</button>
+          <div class="order-number">Call/WhatsApp: +234 812 414 4886</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="category">
+    <h2>New Arrivals</h2>
+    <div class="collection-grid">
+      <div class="collection-item">
+        <img src="assets/images/new1.jpg" alt="Beige Round Neck Shirt">
+        <div class="desc">
+          Sleek beige round-neck shirt
+          <button class="order-btn">Order Now</button>
+          <div class="order-number">Call/WhatsApp: +234 812 414 4886</div>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="assets/images/new2.jpg" alt="Navy Round Neck Shirt">
+        <div class="desc">
+          Luxury navy cotton round-neck
+          <button class="order-btn">Order Now</button>
+          <div class="order-number">Call/WhatsApp: +234 812 414 4886</div>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="assets/images/new3.jpg" alt="Maroon Round Neck Shirt">
+        <div class="desc">
+          Premium maroon designer round-neck
+          <button class="order-btn">Order Now</button>
+          <div class="order-number">Call/WhatsApp: +234 812 414 4886</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Shirts -->
+  <section class="category">
+    <h2>Trending Now</h2>
+    <div class="collection-grid">
+      <div class="collection-item">
+        <img src="assets/images/trend1.jpg" alt="Black & White Round Neck">
+        <div class="desc">
+          Exclusive black & white combo round-neck
+          <button class="order-btn">Order Now</button>
+          <div class="order-number">Call/WhatsApp: +234 812 414 4886</div>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="assets/images/trend2.jpg" alt="Olive Round Neck Shirt">
+        <div class="desc">
+          Top choice olive round-neck shirt
+          <button class="order-btn">Order Now</button>
+          <div class="order-number">Call/WhatsApp: +234 812 414 4886</div>
+        </div>
+      </div>
+      <div class="collection-item">
+        <img src="assets/images/trend3.jpg" alt="Charcoal Round Neck Shirt">
+        <div class="desc">
+          Premium charcoal designer round-neck
+          <button class="order-btn">Order Now</button>
+          <div class="order-number">Call/WhatsApp: +234 812 414 4886</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Vibes Luxury. Premium round-neck shirts crafted for style.
+  </footer>
+
+</body>
+</html>
