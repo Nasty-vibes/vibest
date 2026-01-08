@@ -33,44 +33,37 @@
     /* ===== HERO ===== */
     .hero {
       min-height: 100vh;
-      padding: 70px 24px;
+      padding: 80px 24px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    /* LOGO */
-    .logo {
-      width: 120px;
-    }
-
-    .logo img {
-      width: 100%;
-      object-fit: contain;
+      align-items: center;
+      position: relative;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+        url("assets/images/vibest.jpg") center/cover no-repeat;
     }
 
     .hero-main {
-      max-width: 820px;
+      max-width: 900px;
     }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-size: clamp(2.8rem, 6vw, 5.2rem);
       font-weight: 700;
-      line-height: 1.1;
-      margin-bottom: 20px;
+      line-height: 1.05;
+      margin-bottom: 22px;
     }
 
     .hero p {
-      max-width: 420px;
+      max-width: 480px;
       font-size: 16px;
       line-height: 1.7;
-      opacity: 0.85;
+      opacity: 0.9;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 35px;
-      padding: 14px 36px;
+      margin-top: 36px;
+      padding: 15px 40px;
       border: 1px solid #fff;
       color: #fff;
       text-decoration: none;
@@ -88,14 +81,14 @@
 
     /* ===== STATEMENT ===== */
     .statement {
-      padding: 110px 24px;
+      padding: 120px 24px;
       text-align: center;
       background: #111;
     }
 
     .statement h2 {
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      max-width: 900px;
+      font-size: clamp(1.9rem, 4vw, 3.2rem);
+      max-width: 920px;
       margin: auto;
       font-weight: 500;
       line-height: 1.4;
@@ -106,12 +99,12 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 50px;
-      padding: 110px 24px;
+      padding: 120px 24px;
     }
 
     .feature {
       border-top: 1px solid rgba(255,255,255,0.15);
-      padding-top: 20px;
+      padding-top: 22px;
     }
 
     .feature h3 {
@@ -130,25 +123,22 @@
 
     /* ===== CTA ===== */
     .cta {
-      padding: 130px 24px;
+      padding: 140px 24px;
       text-align: center;
       background: #000;
     }
 
     .cta h2 {
-      font-size: clamp(2rem, 5vw, 4rem);
-      margin-bottom: 30px;
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      margin-bottom: 34px;
       font-weight: 600;
     }
 
     /* ===== MOBILE ===== */
     @media (max-width: 600px) {
       .hero {
-        padding: 60px 20px;
-      }
-
-      .logo {
-        width: 90px;
+        padding: 70px 20px;
+        text-align: left;
       }
 
       .hero p {
@@ -165,10 +155,6 @@
 
   <!-- HERO -->
   <section class="hero show">
-    <div class="logo">
-      <img src="assets/images/vibest.jpg" alt="Vibe Lifestyle Logo">
-    </div>
-
     <div class="hero-main">
       <h1>Wear the vibe.<br>Live the lifestyle.</h1>
       <p>
@@ -210,7 +196,7 @@
   <!-- CTA -->
   <section class="cta">
     <h2>Biggest vibes only.</h2>
-    <a href="#" class="btn">Shop Now</a>
+    <a href="collection.html" class="btn">Shop Now</a>
   </section>
 
   <!-- PASSWORD + MOTION -->
@@ -223,7 +209,6 @@
       input = prompt("Enter password to access Vibe Lifestyle");
     }
 
-    // Scroll reveal animation
     const sections = document.querySelectorAll("section");
 
     const reveal = () => {
